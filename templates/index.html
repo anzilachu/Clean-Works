@@ -1,0 +1,564 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Clean Works Hospitality : Cleaning Services : Doha - Qatar</title>
+	  <meta name="description" content="At Clean Works Hospitality, our journey is guided by a passion for cleanliness and a dedication to our clients in Qatar. We're not just another cleaning service – we're your partners in creating healthier, happier spaces.">
+  <meta name="keywords" content="Clean works hospitality, doha, qatar">
+  <meta name="author" content="Weblanza">
+	<!-- responsive meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- For IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+	<!-- master stylesheet -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<!-- Responsive stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicon.png' %}">
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}" sizes="42x42">
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}" sizes="16x16">
+
+
+    <!-- <?php include('head.php'); ?> -->
+    {% include 'head.html' %}
+    
+</head>
+
+<body>
+<div class="boxed_wrapper">
+
+<!-- <?php include'header.php' ;?>  -->
+{% include 'header.html' %}
+                            
+<!--Home Slider One-->
+<section class="home-slider-one">
+    <div class="silder-right-content" style="background-image:url({% static 'images/slides/slide-right-bg.png' %} );">
+        <ul class="slider-social-links fix">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Linkedin</a></li>
+        </ul>
+        <div class="slider-contact-info">
+            <div class="inner">
+                <div class="icon-holder">
+                    <span class="icon-phone-call"></span>
+                </div>
+                <div class="title-holder">
+                    <h3>Get a free estimate</h3>
+                    <h1>4444 0737</h1>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <div class="home-slider owl-theme owl-carousel banner-carousel-four">
+        <!--Slide-->
+        <div class="slide-item" style="background-image:url({% static 'images/slides/v1-1.jpg' %} );">
+            <div class="auto-container">
+                <div class="content-box">
+                    <div class="shape"><h3>Clean Works Cleaning Services</h3></div>
+                    <h1 class="title">Qatar's Choice for Sparkling Homes</h1>
+                    <div class="link-box"><a href="{% url 'about' %}" class="btn-one">About Us</a></div>
+                </div>
+            </div>
+        </div>
+        <!--Slide-->
+        <div class="slide-item" style="background-image:url({% static 'images/slides/v1-2.jpg' %});">
+            <div class="auto-container">
+                <div class="content-box">
+                    <div class="shape"><h3>Clean Works Hospitality</h3></div>
+                    <h1 class="title">Bringing Freshness to Every Corner of Qatar</h1>
+                    <div class="link-box"><a href="{% url 'contact' %}" class="btn-one">Contact Us</a></div>
+                </div>
+            </div>
+        </div>
+        <!--Slide-->
+        <div class="slide-item" style="background-image:url({% static 'images/slides/v1-3.jpg' %});">
+            <div class="auto-container">
+                <div class="content-box">
+                    <div class="shape"><h3>From Dust to Delight</h3></div>
+                    <h1 class="title">Cleanliness is our craft, and your satisfaction is our art.</h1>
+                    <div class="link-box"><a href="{% url 'contact' %}" class="btn-one">Get Estimate</a></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!--End Home Slider One-->
+
+<!--Start Welcome Area-->
+<section class="welcome-area secpd1">
+    <div class="container">
+        <div class="sec-title text-center">
+            <h3>Clean Works Hospitality</h3>
+            <div class="title">Discover the Art of Cleanliness</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-6 col-lg-6">
+                <div class="welcome-image-box clearfix">
+                    <div class="image-box">
+                        <img src="{% static 'images/resources/welcome.jpg' %}" alt="Awesome Image">
+                    </div>
+                    <div class="image-thumb1">
+                        <img src="{% static 'images/resources/welcome-thumb-1.jpg' %}" alt="Awesome Image">
+                    </div>
+                    <!-- <div class="image-thumb2">
+                        <img src="images/resources/welcome-thumb-2.jpg" alt="Awesome Image">
+                    </div> -->
+                    <div class="icon-box">
+                        <div class="inner">
+                            <img src="{% static 'images/icon/2.png' %}" alt="Icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+                <div class="welcome-content-box">
+                    
+                    <div class="text">
+                        <p>At Clean Works Hospitality, our journey is guided by a passion for cleanliness and a dedication to our clients. We're not just another cleaning service – we're your partners in creating healthier, happier spaces. Our team of skilled professionals is committed to delivering meticulous cleaning, whether it's a routine home cleaning or an extensive deep cleaning project. We adhere to eco-friendly practices, using safe cleaning solutions that protect your health and the environment. Our certifications and awards reflect our industry expertise and commitment to excellence. Join us in our mission to redefine cleanliness in Qatar and experience a level of service that exceeds your expectations.
+                        </p>
+                        <div class="link-box"><a href="{% url 'about' %}" class="btn-one">Read More</a></div>
+                    </div>
+                    <!-- <div class="bottom">
+                        <div class="video-holder-box">
+                            <div class="img-holder">
+                                <img src="images/resources/video-gallery.jpg" alt="Awesome Image">
+                                <div class="icon-holder">
+                                    <div class="icon">
+                                        <div class="inner">
+                                            <a class="html5lightbox" title="Clean Works Video Gallery" href="https://www.youtube.com/watch?v=p25gICT63ek">
+                                                <span class="flaticon-play-button"></span>
+                                            </a>
+                                        </div>   
+                                    </div>
+                                </div>
+                            </div>    
+                        </div> 
+                        <div class="title-holder-box">
+                            <h4>Click on this video to check how<br> we work with <span>Our Clients</span></h4>
+                        </div>    
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Welcome Area-->
+
+<!--Start services style1 area-->
+<section class="services-style1-area secpd1">
+    <div class="container">
+        <div class="sec-title text-center">
+            <h3>Our Sevices</h3>
+            <div class="title">Clean Works Services</div>
+        </div>
+        <div class="row">
+            <!--Start single solution style1--> 
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12"> 
+                <div class="single-service-style1 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                    <div class="inner">
+                        <div class="img-holder">
+                            <img src="{% static 'images/services/1.jpg' %}" alt="Awesome Image">   
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <div class="button">
+                            <a href="residential-cleaning-services.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>    
+                        </div>
+                        <h4><a href="residential-cleaning-services.html">Residential Cleaning Services</a></h4>
+                        <p>At Clean Works Hospitality, we understand that your home is your sanctuary. Our residential cleaning services are designed to ensure that every corner of your living space is a haven of cleanliness and comfort. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--End single solution style1-->
+            <!--Start single solution style1--> 
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12"> 
+                <div class="single-service-style1 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+                    <div class="inner">
+                        <div class="img-holder">
+                            <img src="{% static 'images/services/2.jpg' %}" alt="Awesome Image">   
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <div class="button">
+                            <a href="{% url 'deep_cleaning' %}"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>    
+                        </div>
+                        <h4><a href="{% url 'deep_cleaning' %}">Deep Cleaning Services</a></h4>
+                        <p>Sometimes, a standard cleaning just isn't enough to get your space truly clean and healthy. That's where our deep cleaning services come in. We specialize in going the extra mile to eliminate hidden dirt.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--End single solution style1-->
+            <!--Start single solution style1--> 
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12"> 
+                <div class="single-service-style1 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                    <div class="inner">
+                        <div class="img-holder">
+                            <img src="{% static 'images/services/3.jpg' %}" alt="Awesome Image">   
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <div class="button">
+                            <a href="{% url 'move_in_out' %}"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>    
+                        </div>
+                        <h4><a href="{% url 'move_in_out' %}">Move in / Out Cleaning</a></h4>
+                        <p>Moving can be a stressful experience, but with Clean Works Hospitality, you can leave the cleaning to us and focus on the excitement of your new journey. Our move in/out cleaning is specially tailored to prepare properties..
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--End single solution style1-->
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12"> 
+                <div class="single-service-style1 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                    <div class="inner">
+                        <div class="img-holder">
+                            <img src="{% static 'images/services/4.jpg' %}" alt="Awesome Image">   
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <div class="button">
+                            <a href="{% url 'outdoor' %}"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>    
+                        </div>
+                        <h4><a href="{% url 'outdoor' %}">Outdoor Cleaning</a></h4>
+                        <p>The exterior of your property is the first impression guests or clients have of your home or business. At Clean Works Hospitality, we offer a comprehensive range of outdoor cleaning services.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--End single solution style1-->
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12"> 
+                <div class="single-service-style1 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                    <div class="inner">
+                        <div class="img-holder">
+                            <img src="{% static 'images/services/5.jpg' %}" alt="Awesome Image">   
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <div class="button">
+                            <a href="{% url 'afterparty' %}"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>    
+                        </div>
+                        <h4><a href="{% url 'afterparty' %}">After Party Cleaning</a></h4>
+                        <p>Hosting a party or event is a joyous occasion, but the aftermath can be overwhelming. That's where Clean Works Hospitality steps in with our after-party cleaning services.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--End single solution style1-->
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12"> 
+                <div class="single-service-style1 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                    <div class="inner">
+                        <div class="img-holder">
+                            <img src="{% static 'images/services/6.jpg' %}" alt="Awesome Image">   
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <div class="button">
+                            <a href="{% url 'water_tank' %}"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>    
+                        </div>
+                        <h4><a href="water-tank-cleaning.php">Water Tank Cleaning</a></h4>
+                        <p>Clean water is essential for your health and well-being, and maintaining a clean water tank is a critical step in ensuring your water supply remains safe and free from contamination.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--End single solution style1-->
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="contact-us text-center wow fadeInUp" data-wow-delay="1000ms" data-wow-duration="1500ms">
+                    <h3>Don’t hesitate, <a href="{% url 'water_tank' %}">contact us</a> for help and services.</h3>
+                </div>
+            </div>
+        </div> 
+    </div>
+</section>
+<!--End services style1 area-->
+
+<!--Start Working Steps area-->
+<section class="working-steps-area">
+    <div class="container">
+        <div class="sec-title text-center">
+            <h3>How It Works</h3>
+            <div class="title">Follow 4 Easy Steps</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <ul class="fix text-center">
+                    <!--Start Single working steps Box-->
+                    <li class="single-working-steps-box wow fadeInUp">
+                        <div class="icon-holder">
+                            <span class="flaticon-clock"></span>
+                            <div class="count">
+                                <h5>01</h5>
+                            </div>
+                        </div>
+                        <div class="text-holder">
+                            <h4><a href="#">Schedule Your<br> requirements</a></h4>
+                            <!-- <p>Quisqu tell us risus adpis viera bibe um urna.</p> -->
+                        </div>
+                    </li>
+                    <!--End Single working steps Box-->
+                    <!--Start Single working steps Box-->
+                    <li class="single-working-steps-box wow fadeInUp" data-wow-delay="300ms">
+                        <div class="icon-holder">
+                            <span class="flaticon-architect"></span>
+                            <div class="count">
+                                <h5>02</h5>
+                            </div>
+                        </div>
+                        <div class="text-holder">
+                            <h4><a href="#">Get Professional<br> Advices</a></h4>
+                            <!-- <p>Quisqu tell us risus adpis viera bibe um urna.</p> -->
+                        </div>
+                    </li>
+                    <!--End Single working steps Box-->
+                    <!--Start Single working steps Box-->
+                    <li class="single-working-steps-box wow fadeInUp" data-wow-delay="600ms">
+                        <div class="icon-holder">
+                            <span class="flaticon-handshake-1"></span>
+                            <div class="count">
+                                <h5>03</h5>
+                            </div>
+                        </div>
+                        <div class="text-holder">
+                            <h4><a href="#">Meet Your<br> Cleaning Expert</a></h4>
+                            <!-- <p>Quisqu tell us risus adpis viera bibe um urna.</p> -->
+                        </div>
+                    </li>
+                    <!--End Single working steps Box-->
+                    <!--Start Single working steps Box-->
+                    <li class="single-working-steps-box wow fadeInUp" data-wow-delay="900ms">
+                        <div class="icon-holder">
+                            <span class="flaticon-cleaning-service"></span>
+                            <div class="count">
+                                <h5>04</h5>
+                            </div>
+                        </div>
+                        <div class="text-holder">
+                            <h4><a href="#"></a> Get a Best<br> Cleaning Service</h4>
+                            <!-- <p>Quisqu tell us risus adpis viera bibe um urna.</p> -->
+                        </div>
+                    </li>
+                    <!--End Single working steps Box-->
+                  
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Working Steps area-->
+
+<!--Start Quote area-->
+<section class="quote-area">
+    <div class="video-gallery-bg">
+        <div class="video-holder-box">
+            <div class="img-holder">
+                <img src="{% static 'images/resources/video-gallery-bg.jpg' %} " alt="Awesome Image">
+                <div class="icon-holder">
+                    <div class="icon">
+                        <div class="inner text-center">
+                            <a class="html5lightbox" title="Clean Works Video Gallery">
+                                <span class="flaticon-play-button"></span>
+                            </a>
+                            <h3>Qatar's Premier Cleaning Solution</h3>
+                            <h1>Your Home, Our Passion:<br>Clean Works Hospitality</h1>
+                        </div>   
+                    </div>
+                </div>
+            </div>    
+        </div>     
+    </div>
+                <!-- <?php
+if (isset($_POST['submit'])) {
+
+    if ($_POST['spm']=="") {
+
+    $name = filter_var($_POST["name"], FILTER_SANITIZE_STRING);
+    $email = filter_var($_POST["email"], FILTER_SANITIZE_STRING);
+    $number = filter_var($_POST["number"], FILTER_SANITIZE_STRING);
+    $service = filter_var($_POST["service"], FILTER_SANITIZE_STRING);
+    $msg = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
+    $message = "Please find the following online request:\r\n\r\nSender Name: ".$name."\r\nEmail: ".$email."\r\nContact Number: ".$number."\r\nRequired Service: ".$service."\r\nMessage: ".$msg.".";
+
+    $to = "mashood@cleanworksqatar.com";
+    $subject = "Message from Clean Works Website - $name";
+    $headers = "From: $email";
+    $mailSuccess = mail($to, $subject, $message, $headers);
+
+    if ($mailSuccess) {
+        ?>
+        <script> alert("Message sent successfully! Our team will revert you soon."); window.location.href = "index.php";</script>
+        <?php
+    }
+} }
+?> -->
+
+    <div class="container inner-content">
+        <div class="row">
+             <div class="col-xl-8 col-lg-8">
+                <div class="quote-form">
+                    <div class="title"><h2>Get a Free Quote</h2></div>
+                    <div class="inner-quote-box">
+                        <form class="default-form" action="{% url 'submit_contact_form' %}" method="post">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="input-box">
+                                        <input type="text" name="name" value="" placeholder="Your name" required="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-box"> 
+                                        <input type="email" name="email" value="" placeholder="Email address" required="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-box">
+                                        <input type="text" name="number" value="" placeholder="Contact Number" required="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="input-box">
+                                        <select name="service" class="selectmenu" required="">
+                                            <option selected="selected">Select your required service</option>
+                                            <option>Residential Cleaning Services</option>
+                                            <option>Deep Cleaning Services</option>
+                                            <option>Move In / Out Cleaning</option>
+                                            <option>Outdoor Cleaning</option>
+                                            <option>After Party Cleaning</option>
+                                            <option>Water Tank Cleaning</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="input-box">
+                                        <textarea name="message" placeholder="Write here message" required=""></textarea> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input type="hidden" name="spm">
+                                    <button class="btn-one" name="submit" type="submit">Get Estimate</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4">
+                <div class="quote-right-box">
+                    <div class="image-holder">
+                        <img src="{% static 'images/resources/quote.jpg' %}" alt="Awesome Image">
+                    </div>
+                    <div class="text-holder">
+                        <h4>Clean Works is trusted by more than 1,000 clients.</h4>
+                        <a href="{% url 'contact' %}">Get our Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Quote area-->
+ 
+
+<!--Start choose area--> 
+<section class="choose-area" style="background-image:url({% static 'images/resources/choose-bg.jpg' %});">
+    <div class="container">
+        <div class="sec-title clr-white text-center">
+            <h3>Why You Should Choose Us</h3>
+            <div class="title">Reasons to Choose Us</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <ul class="choose-content fix">
+                    <li class="single-choose-box wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <span class="flaticon-medal"></span> 
+                        <h4>Qualified<br> Experts</h4>   
+                    </li>
+                    <li class="single-choose-box wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+                        <span class="flaticon-calendar"></span> 
+                        <h4>Service on<br> Schedule</h4>   
+                    </li>  
+                    <li class="single-choose-box wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                        <span class="flaticon-portfolio"></span> 
+                        <h4>Affordable<br> Prices</h4>   
+                    </li>  
+                    <li class="single-choose-box wow fadeInUp" data-wow-delay="800ms" data-wow-duration="1500ms">
+                        <span class="flaticon-support-1"></span> 
+                        <h4>Reliable<br> Service</h4>   
+                    </li>  
+                    <li class="single-choose-box wow fadeInUp" data-wow-delay="1000ms" data-wow-duration="1500ms">
+                        <span class="flaticon-offer"></span> 
+                        <h4>Special<br> Offers</h4>   
+                    </li>      
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="contact-us text-center wow fadeInUp" data-wow-delay="1000ms" data-wow-duration="1500ms">
+                    <h3>Don’t hesitate, contact us for help and services. <a href="{% url 'contact' %}">Book Online</a></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>     
+<!--End choose area-->
+
+
+  
+<!--Start footer area-->  
+
+    {% include 'footer.html' %}
+
+
+</div>  
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target thm-bg-clr" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+
+<!-- main jQuery -->
+<script src="{% static 'js/jquery.js' %}"></script>
+<!-- Wow Script -->
+<script src="{% static 'js/wow.js' %}"></script>
+<!-- bootstrap -->
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<!-- bx slider -->
+<script src="{% static 'js/jquery.bxslider.min.js' %}"></script>
+<!-- Fancybox Script -->
+<script src="{% static 'js/jquery.fancybox.js' %}"></script>
+<!-- count to -->
+<script src="{% static 'js/jquery.countTo.js' %}"></script>
+<script src="{% static 'js/appear.js' %}"></script>
+<!-- owl carousel -->
+<script src="{% static 'js/owl.js' %}"></script>
+<!-- validate -->
+<script src="{% static 'js/validation.js' %}"></script>
+<!-- mixit up -->
+<script src="{% static 'js/jquery.mixitup.min.js' %}"></script>
+<!-- isotope script-->
+<script src="{% static 'js/isotope.js' %}"></script>
+<!-- Easing -->
+<script src="{% static 'js/jquery.easing.min.js' %}"></script>
+
+<!-- thm custom script -->
+<script src="{% static 'js/custom.js' %}"></script>
+
+
+
+
+</body>
+</html>

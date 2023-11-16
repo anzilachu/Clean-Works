@@ -1,0 +1,162 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Water Tank Cleaning Service : Clean Works Hospitality : Doha - Qatar</title>
+    <meta name="description" content="At Clean Works Hospitality, our journey is guided by a passion for cleanliness and a dedication to our clients in Qatar. We're not just another cleaning service – we're your partners in creating healthier, happier spaces.">
+    <meta name="keywords" content="Clean works hospitality, doha, qatar">
+    <meta name="author" content="Weblanza">
+
+	<!-- responsive meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- For IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+	<!-- master stylesheet -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<!-- Responsive stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicon.png' %}">
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}" sizes="42x42">
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}" sizes="16x16">
+
+    <!-- <?php include('head.php'); ?> -->
+    {% include 'head.html' %}
+    
+</head>
+
+<body>
+<div class="boxed_wrapper">
+
+<!-- <?php include'header.php' ;?>  -->
+{% include 'header.html' %} 
+                            
+<section class="breadcrumb-area" style="background-image:url({% static 'images/resources/breadcrumb-bg.jpg' %});">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="inner-content text-center clearfix">
+                    <div class="breadcrumb-menu">
+                        <ul class="clearfix">
+                            <li><a href="{% url 'home' %}">Home</a></li>
+                            <li>Services</li>
+                            <li class="active">Water Tank Cleaning</li>
+                        </ul>    
+                    </div>
+                    <div class="title">
+                       <h1>Water Tank Cleaning</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+</section>
+
+<section class="single-service-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12">
+                <div class="single-service-sidebar">
+                    <!--Start Single sidebar-->
+                    <div class="single-sidebar">
+                        <div class="service-sidebar-title">
+                            <h3>SERVICES</h3>
+                        </div>
+                        <ul class="service-pages">
+                            <li><a href="{% url 'resedential' %}">Residential Cleaning Services</a></li>
+                            <li ><a href="{% url 'deep_cleaning' %}">Deep Cleaning Services</a></li>
+                            <li><a href="{% url 'move_in_out' %}">Move in / Out Cleaning</a></li>
+                            <li><a href="{% url 'outdoor' %}">Outdoor Cleaning</a></li>
+                            <li><a href="{% url 'afterparty' %}">After Party Cleaning</a></li>
+                            <li class="active"><a href="{% url 'water_tank' %}">Water Tank Cleaning</a></li>
+                        </ul>
+                    </div>
+                    <!--End Single sidebar-->
+                    <div class="sidebar-box-online text-center" style="background-image:url({% static 'images/resources/sidebar-box-online-bg.jpg' %});">
+                        <h3>Book Online</h3>
+                        <div class="title">Bringing Freshness to Every Corner of Qatar</div>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="col-xl-8 col-lg-7 col-md-12 col-sm-12">
+                <div class="single-service-top">
+                    <div class="top-image-holder">
+                        <img src="{% static 'images/services/6.jpg' %}" alt="Water Tank Cleaning">
+                    </div>
+                    <div class="sec-title-box">
+                        <h1>Water Tank Cleaning</h1>
+                    </div>
+                    <div class="text">
+                        <p>Clean water is essential for your health and well-being, and maintaining a clean water tank is a 
+critical step in ensuring your water supply remains safe and free from contamination. At Clean 
+Works Hospitality, we offer professional water tank cleaning services to ensure your water 
+remains pure and free from harmful impurities. Our trained technicians use advanced techniques 
+and safe cleaning agents to eliminate sediment, bacteria, and other contaminants from your 
+water tank, ensuring that the water you use for drinking and daily activities is clean and safe. 
+Regular water tank cleaning is essential to prevent the buildup of sludge, algae, and harmful 
+microorganisms that can compromise the quality of your water. We follow strict hygiene and 
+safety protocols to protect your health and the environment.</p>
+                        <ul>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Inspection of the water tank's condition</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Drainage of existing water</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Removal of sediment and debris from the tank</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Scrubbing and cleaning the interior surfaces</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Disinfection of the tank to kill bacteria and pathogens.</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Replacement of the water with clean, potable water</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Sealing the tank to prevent contamination.</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>    
+</section>  
+  
+<!--Start footer area-->  
+    <?php include'footer.php' ;?> 
+    {% include 'footer.html' %}
+
+
+</div>  
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target thm-bg-clr" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+
+<!-- main jQuery -->
+<script src="{% static 'js/jquery.js' %}"></script>
+<!-- Wow Script -->
+<script src="{% static 'js/wow.js' %}"></script>
+<!-- bootstrap -->
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<!-- bx slider -->
+<script src="{% static 'js/jquery.bxslider.min.js' %}"></script>
+<!-- Fancybox Script -->
+<script src="{% static 'js/jquery.fancybox.js' %}"></script>
+<!-- count to -->
+<script src="{% static 'js/jquery.countTo.js' %}"></script>
+<script src="{% static 'js/appear.js' %}"></script>
+<!-- owl carousel -->
+<script src="{% static 'js/owl.js' %}"></script>
+<!-- validate -->
+<script src="{% static 'js/validation.js' %}"></script>
+<!-- mixit up -->
+<script src="{% static 'js/jquery.mixitup.min.js' %}"></script>
+<!-- isotope script-->
+<script src="{% static 'js/isotope.js' %}"></script>
+<!-- Easing -->
+<script src="{% static 'js/jquery.easing.min.js' %}"></script>
+
+<!-- thm custom script -->
+<script src="{% static 'js/custom.js' %}"></script>
+
+
+
+</body>
+</html>

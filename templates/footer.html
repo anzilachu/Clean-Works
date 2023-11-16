@@ -1,0 +1,99 @@
+{% load static %}
+<footer class="footer-area">
+    
+    <div class="inner-container">
+        <div class="row">
+            <!--Start single footer widget-->
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                <div class="single-footer-widget marbtm50">
+                    <div class="footer-logo">
+                        <a href="{% url 'home' %}">
+                            <img src="{% static 'images/logo.png' %}" alt="Awesome Logo">
+                        </a>
+                    </div>
+                    <div class="company-info">
+                        <div class="text-box">
+                            Clean Works Hospitality is more than just a cleaning service; we're your trusted cleaning companion in Qatar.
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <!--End single footer widget-->
+            <!--Start single footer widget-->
+            <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12">
+                <div class="single-footer-widget marbtm50">
+                    <div class="title">
+                        <h3>Explore</h3>
+                    </div>
+                    <ul class="explore-links">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'about' %}">About</a></li> 
+                        <li><a href="{% url 'bookservice' %}">Book A Service</a></li>
+                        <li><a href="{% url 'servicefee' %}">Service Fee</a></li>
+                        <li><a href="{% url 'contact' %}">Contact</a></li>
+                    </ul>   
+                </div>
+            </div>
+            <!--End single footer widget-->
+            <!--Start single footer widget-->
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                <div class="single-footer-widget marleft30">
+                    <div class="title">
+                        <h3>Services</h3>
+                    </div>
+                    <ul class="legal-links">
+                        <li class="active"><a href="{% url 'resedential' %}">Residential Cleaning Services</a></li>
+                            <li ><a href="{% url 'deep_cleaning' %}">Deep Cleaning Services</a></li>
+                            <li><a href="{% url 'move_in_out' %}">Move in / Out Cleaning</a></li>
+                            <li><a href="{% url 'outdoor' %}">Outdoor Cleaning</a></li>
+                            <li><a href="{% url 'afterparty' %}">After Party Cleaning</a></li>
+                            <li><a href="{% url 'water_tank' %}">Water Tank Cleaning</a></li>
+                    </ul>  
+                </div>
+            </div>
+            <!--End single footer widget-->
+            <!--Start single footer widget-->
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div class="single-footer-widget marleft40 pdtop50">
+                    <div class="title">
+                        <h3>You have any Question?</h3>
+                    </div>
+                    <ul class="contact-info">
+                        <li>
+                            <span>Email</span>
+                            <h3><a style="color: #fff;" href="mailto:mashood@cleanworksqatar.com">mashood@cleanworksqatar.com</a> </h3>
+                        </li>
+                        <li>
+                            <span>Sales</span>
+                            <h3><a style="color: #fff;" href="mailto:sales@cleanworksqatar.com">sales@cleanworksqatar.com</a> </h3>
+                        </li>
+                        <li>
+                            <div class="text">
+                                <p>Near Hilal Government Complex, Building No: 242, Zone 25, Office # 09, C-Ring Road, Doha - Qatar</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--End single footer widget-->
+            
+        </div>
+    </div>
+</footer>   
+<!--End footer area-->
+
+<!--Start footer bottom area-->
+<section class="footer-bottom-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <div class="inner text-center clearfix">
+                    <div class="copyright-text">
+                        <p>© Copyright <?= date('Y'); ?> by <a href="#">CLEAN WORKS HOSPITALITY</a> | Made with <i class="fa fa-heart"></i> by <a href="https://www.weblanza.com" target="_blank">Weblanza</a> </p>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>    
+</section>
+<!--End footer bottom area-->   

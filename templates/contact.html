@@ -1,0 +1,256 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact : Clean Works Hospitality : Cleaning Services : Doha - Qatar</title>
+      <meta name="description" content="At Clean Works Hospitality, our journey is guided by a passion for cleanliness and a dedication to our clients in Qatar. We're not just another cleaning service – we're your partners in creating healthier, happier spaces.">
+  <meta name="keywords" content="Clean works hospitality, doha, qatar">
+  <meta name="author" content="Weblanza">
+
+	<!-- responsive meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- For IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+	<!-- master stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<!-- Responsive stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicon.png' %}">
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}" sizes="42x42">
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}" sizes="16x16">
+    <!-- <?php include('head.php'); ?> -->
+    {% include 'head.html' %}
+
+    
+</head>
+
+<body>
+<div class="boxed_wrapper">
+
+<!-- <?php include'header.php' ;?>  -->
+{% include 'header.html' %}
+                            
+<section class="breadcrumb-area" style="background-image:url({% static 'images/resources/breadcrumb-bg.jpg' %});">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="inner-content text-center clearfix">
+                    <div class="breadcrumb-menu">
+                        <ul class="clearfix">
+                            <li><a href="{% url 'home' %}">Home</a></li>
+                            <li class="active">Contacts</li>
+                        </ul>    
+                    </div>
+                    <div class="title">
+                       <h1>Contacts</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+</section>
+
+<!--Start contact form area-->
+<section class="contact-info-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-5 col-lg-6">
+                <div class="contact-info-content">
+                    <div class="sec-title">
+                        <h3>Contact With Us</h3>
+                        <div class="title">Write Us a Message</div>
+                    </div>
+                    <div class="inner-content">
+                        <div class="text">
+                            <p>Feel free to reach out to us anytime; we're here to assist you with all your cleaning needs and inquiries.</p>
+                        </div>
+                        <ul>
+                            <li>
+                                <p>Call Now</p>
+                                <span><a style="color: #a1a4b5;" href="tel:0097444440737">+974 4444 0737</a> </span>
+                            </li>
+                            <li>
+                                <p>Mobile Number</p>
+                                <span><a style="color: #a1a4b5;" href="tel:0097451226999">+974 5122 6999</a></span>
+                            </li>
+                            <li>
+                                <p>Send Email</p>
+                                <span><a style="color: #a1a4b5;" href="mailto:mashood@cleanworksqatar.com">mashood@cleanworksqatar.com</a> </span>
+                                <span><a style="color: #a1a4b5;" href="mailto:sales@cleanworksqatar.com">sales@cleanworksqatar.com</a> </span>
+                            </li>
+                            <li>
+                                <p>Visit Us</p>
+                                <span>Near Hilal Government Complex, Building No: 242, Zone 25, Office # 09,<br>C-Ring Road, Doha - Qatar</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>    
+            </div>
+            <!-- <?php
+if (isset($_POST['submit'])) {
+
+    if ($_POST['spm']=="") {
+
+    $name = filter_var($_POST["name"], FILTER_SANITIZE_STRING);
+    $email = filter_var($_POST["email"], FILTER_SANITIZE_STRING);
+    $number = filter_var($_POST["number"], FILTER_SANITIZE_STRING);
+    $service = filter_var($_POST["service"], FILTER_SANITIZE_STRING);
+    $msg = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
+    $message = "Please find the following online request:\r\n\r\nSender Name: ".$name."\r\nEmail: ".$email."\r\nContact Number: ".$number."\r\nRequired Service: ".$service."\r\nMessage: ".$msg.".";
+
+    $to = "mashood@cleanworksqatar.com";
+    $subject = "Message from Clean Works Website - $name";
+    $headers = "From: $email";
+    $mailSuccess = mail($to, $subject, $message, $headers);
+
+    if ($mailSuccess) {
+        ?>
+        <script> alert("Message sent successfully! Our team will revert you soon."); window.location.href = "contact.php";</script>
+        <?php
+    }
+    // if ($mailSuccess) {
+    //     $msg = '<span style="padding: 10px; background: #48b500; text-align: center; color: #fff; margin-bottom:30px; width:100%; float:left;">Message sent successfully!</span>';
+    // } else {
+    //     $msg = '<span style="padding: 10px; background: #f00; text-align: center; color: #fff; margin-bottom:30px; width:100%; float:left;">Message sent Failed!</span>';
+    // }
+} }
+
+?> -->
+
+            <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12">
+                <div class="contact-form">
+                    
+                    <form class="default-form" action="{% url 'submit_contact_form' %}" method="post">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="input-box">   
+                                    <input type="text" name="name" value="" placeholder="Your Name" required="">
+                                    <div class="icon">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                    </div>
+                                </div>    
+                            </div>
+                            <div class="col-md-12">
+                                <div class="input-box"> 
+                                    <input type="email" name="email" value="" placeholder="Email Address" required="">
+                                    <div class="icon">
+                                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    </div>
+                                </div>    
+                            </div>    
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="input-box"> 
+                                    <input type="text" name="number" value="" placeholder="Contact Number" required="" required="">
+                                    <div class="icon">
+                                        <i class="fa fa-phone" aria-hidden="true"></i>
+                                    </div>
+                                </div>    
+                            </div> 
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="input-box">
+                                    <select class="selectmenu" name="service" required="">
+                                        <option selected="selected">Select Services</option>
+                                        <option value="Residential Cleaning Services">Residential Cleaning Services</option>
+                                        <option value="Deep Cleaning Services">Deep Cleaning Services</option>
+                                        <option value="Move In / Out Cleaning">Move In / Out Cleaning</option>
+                                        <option value="Outdoor Cleaning">Outdoor Cleaning</option>
+                                        <option value="After Party Cleaning">After Party Cleaning</option>
+                                        <option value="Water Tank Cleaning">Water Tank Cleaning</option>
+                                    </select>
+                                    <div class="icon">
+                                        <i class="fa fa-question" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="input-box">    
+                                    <textarea name="message" placeholder="Your Message.." required=""></textarea> 
+                                    <div class="icon">
+                                        <i class="fa fa-comment" aria-hidden="true"></i>
+                                    </div>
+                                </div>   
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="button-box">
+                                    <input id="form_botcheck" name="spm" class="form-control" type="hidden">
+                                    <button class="btn-one" name="submit" type="submit">Submit Here</button>    
+                                </div>     
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!--End contact form area-->
+
+<!--Start Google Map Area-->
+<!--<section class="google-map-area">-->
+<!--    <div class="container-fluid">-->
+<!--        <div class="row">-->
+<!--            <div class="col-xl-12">-->
+<!--                <div class="google-map-box">-->
+<!--                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.214650718467!2d51.53220717426162!3d25.26336372901962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45c55883335521%3A0xe437520d3676bd45!2sAttestation%20-%20MOFA%20Doha!5e0!3m2!1sen!2sin!4v1695787328307!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+<!--                </div> -->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<!--End Google Map Area-->
+  
+<!--Start footer area-->  
+    
+    {% include 'footer.html' %}
+
+
+</div>  
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target thm-bg-clr" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+
+<!-- main jQuery -->
+<script src="{% static 'js/jquery.js' %}"></script>
+<!-- Wow Script -->
+<script src="{% static 'js/wow.js' %}"></script>
+<!-- bootstrap -->
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<!-- bx slider -->
+<script src="{% static 'js/jquery.bxslider.min.js' %}"></script>
+<!-- Fancybox Script -->
+<script src="{% static 'js/jquery.fancybox.js' %}"></script>
+<!-- count to -->
+<script src="{% static 'js/jquery.countTo.js' %}"></script>
+<script src="{% static 'js/appear.js' %}"></script>
+<!-- owl carousel -->
+<script src="{% static 'js/owl.js' %}"></script>
+<!-- validate -->
+<script src="{% static 'js/validation.js' %}"></script>
+<!-- mixit up -->
+<script src="{% static 'js/jquery.mixitup.min.js' %}"></script>
+<!-- isotope script-->
+<script src="{% static 'js/isotope.js' %}"></script>
+<!-- Easing -->
+<script src="{% static 'js/jquery.easing.min.js' %}"></script>
+
+<!-- thm custom script -->
+<script src="{% static 'js/custom.js' %}"></script>
+
+
+
+</body>
+</html>
