@@ -1,0 +1,106 @@
+{% extends 'Admin/base.html' %}
+{% load static %}
+
+{% block title %} 
+    <title>Add Portfolio</title> 
+{% endblock title %}
+
+{% block page %} 
+    <li class="breadcrumb-item active" aria-current="page">Add Portfolio</li>
+{% endblock page %}
+
+{% block content %}
+
+<!-- BEGIN: Notification -->
+{% if messages %}
+    {% for message in messages %}
+        <div class="intro-y col-span-11 alert alert-{{ message.tags }} alert-dismissible show flex items-center mb-6 mt-5 text-white" role="alert">
+            <span><i data-lucide="info" class="w-4 h-4 mr-2"></i></span>
+            <span>{{ message }}</span>
+            <button type="button" class="btn-close text-white" data-tw-dismiss="alert" aria-label="Close"> <i data-lucide="x" class="w-4 h-4"></i> </button>
+        </div>
+    {% endfor %}
+{% endif %}
+<!-- BEGIN: Notification -->
+
+<div class="intro-y box py-10 sm:py-20 mt-5">
+
+    <h2 class="text-primary" style=" font-size: 30px; font-weight: 500; text-align: center;">Add Portfolio</h2>
+    
+    <div class="px-3 sm:px-10 mt-10 pt-10 border-t border-slate-200/60 dark:border-darkmode-400">
+        <form action="" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="grid grid-cols-12 gap-4 gap-y-5 mt-5"> 
+                <div class="intro-y col-span-12 sm:col-span-6">
+                    <label for="input-wizard-2" class="form-label">Portfolio Title</label>
+                    <input name="title" id="title" type="text" class="form-control" placeholder="Portfolio Title" required>
+                </div>
+
+                <!-- <div class="intro-y col-span-12 sm:col-span-6">
+                    <label for="input-wizard-2" class="form-label">Clinic Image</label>
+                    <input name="image" id="FilUploader" accept=".png,.jpg,.jpeg" type="file" class="form-control">
+                </div> -->
+
+                <div class="intro-y col-span-12 sm:col-span-6">
+                    <label for="input-wizard-2" class="form-label">Clinic Image</label>
+                    <input name="image" id="FilUploader" accept=".png,.jpg,.jpeg" type="file" class="form-control">
+                </div>
+                
+
+                <div class="intro-y col-span-12 sm:col-span-6">
+                    <label for="input-wizard-2" class="form-label">Phone</label>
+                    <input name="phone" type="text" class="form-control" placeholder="Clinic Phone Number" required>
+                </div>
+
+                <div class="intro-y col-span-12 sm:col-span-6">
+                    <label for="input-wizard-2" class="form-label">Email</label>
+                    <input name="email" type="email" class="form-control" placeholder="Clinic Email">
+                </div>
+
+                <div class="intro-y col-span-12 sm:col-span-6">
+                    <label for="input-wizard-2" class="form-label">Working Time</label>
+                    <input name="wtime" type="text" class="form-control" placeholder="Clinic Working Time">
+                </div>
+
+                <div class="intro-y col-span-12 sm:col-span-6">
+                    <label for="input-wizard-2" class="form-label">Location Link</label>
+                    <input name="loc" type="url" class="form-control" placeholder="Enter Location">
+                </div>
+
+                <div class="intro-y col-span-12 sm:col-span-12">
+                    <label for="input-wizard-2" class="form-label">Description</label>
+                    <textarea name="description" id="editor" cols="30" rows="3" class="form-control"></textarea>
+                </div>
+
+                <div class="col-span-12">
+                    <h2 class="text-primary mt-3" style=" font-size: 20px; font-weight: 500; text-align: center;">SEO</h2>
+                </div>
+
+                <div class="intro-y col-span-12 sm:col-span-6">
+                    <label for="input-wizard-2" class="form-label">SEO Url</label>
+                    <input name="seo_url" id="url" type="text" class="form-control" placeholder="SEO Title" required>
+                </div>
+
+                <div class="intro-y col-span-12 sm:col-span-6">
+                    <label for="input-wizard-2" class="form-label">SEO Title</label>
+                    <input name="seo_title" id="input-wizard-2" type="text" class="form-control" placeholder="SEO Title">
+                </div>
+
+                <div class="intro-y col-span-12 sm:col-span-6">
+                    <label for="input-wizard-2" class="form-label">SEO Keywords</label>
+                    <input name="seo_keywords" id="input-wizard-2" type="text" class="form-control" placeholder="SEO Keywords">
+                </div>
+
+                <div class="intro-y col-span-12 sm:col-span-6">
+                    <label for="input-wizard-2" class="form-label">SEO Description</label>
+                    <textarea name="seo_description" id="" cols="30" rows="5" class="form-control" placeholder="SEO Description"></textarea>
+                </div>
+
+                <div class="intro-y col-span-12 flex items-center justify-center sm:justify-end mt-5">
+                    <button class="btn btn-primary w-24 ml-2" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock content %}

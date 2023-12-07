@@ -1,13 +1,13 @@
-from Core.models import ContactFormSubmission
+from Core.models import *
 
 def context_processor(request):
     # Define your context variables
 
 
-    form_submissions = ContactFormSubmission.objects.filter(Status=1)
+    project = Project.objects.filter(Status=1)
 
     context = {
 
-        'form_submissions': form_submissions,
+        'project': project,
     }
     return context

@@ -4,15 +4,15 @@
     <!-- BEGIN: Head -->
     <head>
         <meta charset="utf-8">
-        <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicon.png' %}">
+        <!-- <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicon.png' %}">
         <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}" sizes="42x42">
-        <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}" sizes="16x16">
+        <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}" sizes="16x16"> -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="keywords" content="">
         <meta name="author" content="">
         {% block title %}
-            <title>Dashboard | Clean Works</title>
+            <title>Dashboard | Multiline</title>
         {% endblock title %}
         <!-- BEGIN: CSS Assets-->
         <link rel="stylesheet" href="{% static 'admin/css/app.css' %}" />
@@ -46,9 +46,21 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{% url 'contact-list' %}" class="menu">
-                            <div class="menu__icon"> <i data-lucide="user-plus"></i> </div>
-                            <div class="menu__title"> Enquiry </div>
+                        <a href="{% url 'category' %}" class="menu">
+                            <div class="menu__icon"> <i data-lucide="list"></i> </div>
+                            <div class="menu__title"> Category </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'portfolio' %}" class="menu">
+                            <div class="menu__icon"> <i data-lucide="user"></i> </div>
+                            <div class="menu__title"> Portfolio </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'blog' %}" class="menu">
+                            <div class="menu__icon"> <i data-lucide="book-open"></i> </div>
+                            <div class="menu__title"> Blogs </div>
                         </a>
                     </li>
                     <!-- <li>
@@ -142,7 +154,7 @@
                 <!-- BEGIN: Logo -->
                 <a href="" class="logo -intro-x hidden md:flex xl:w-[180px] block">
                     <img alt="Midone - HTML Admin Template" class="logo__image w-6" src="{% static 'admin/images/logo.svg' %}">
-                    <span class="logo__text text-white text-lg ml-3"> Clean Works </span> 
+                    <span class="logo__text text-white text-lg ml-3"> Multiline </span> 
                 </a>
                 <!-- END: Logo -->
                 <!-- BEGIN: Breadcrumb -->
@@ -264,11 +276,25 @@
                             <div class="side-menu__title"> Dashboard </div>
                         </a>
                     </li>
+
+                    <li>
+                        <a href="{% url 'category' %}" class="side-menu{% if page == 'category' %} side-menu--active{% endif %}">
+                            <div class="side-menu__icon"> <i data-lucide="list"></i> </div>
+                            <div class="side-menu__title"> Category </div>
+                        </a>
+                    </li>
                 
                     <li>
-                        <a href="{% url 'contact-list' %}" class="side-menu{% if page == 'contact' %} side-menu--active{% endif %}">
-                            <div class="side-menu__icon"> <i data-lucide="phone"></i> </div>
-                            <div class="side-menu__title"> Enquiry </div>
+                        <a href="{% url 'portfolio' %}" class="side-menu{% if page == 'portfolio' %} side-menu--active{% endif %}">
+                            <div class="side-menu__icon"> <i data-lucide="user"></i> </div>
+                            <div class="side-menu__title"> Portfolio </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{% url 'blog' %}" class="side-menu{% if page == 'blog' %} side-menu--active{% endif %}">
+                            <div class="side-menu__icon"> <i data-lucide="book-open"></i> </div>
+                            <div class="side-menu__title"> Blogs </div>
                         </a>
                     </li>
                 </ul>
@@ -371,7 +397,7 @@
                             </li>
                         </ul>
                     </li> -->
-                    <li class="side-nav__devider my-6"></li>
+                    <!-- <li class="side-nav__devider my-6"></li> -->
                 </ul>
             </nav>
             <!-- END: Side Menu -->

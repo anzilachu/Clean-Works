@@ -26,8 +26,8 @@ urlpatterns = [
     # path('db/', admin.site.urls),
     path('',include('U_Auth.urls')),
     path('',include('ErrHandler.urls')),
-    path('admin/',include('Core.urls')),
-    path('',include('Frontpage.urls'))
+    path('',include('Core.urls')),
+    # path('',include('Frontpage.urls'))
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
